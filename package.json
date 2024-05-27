@@ -33,6 +33,14 @@
   "engines": {
     "vscode": "^1.40.0"
   },
+  "contributes": {
+    "snippets": [
+      {
+        "language": "vue",
+        "path": "./src/snippets/vue.json"
+      }
+    ]
+  },
   "scripts": {
     "build": "tsup src/index.ts --external vscode",
     "dev": "pnpm run build --watch",
