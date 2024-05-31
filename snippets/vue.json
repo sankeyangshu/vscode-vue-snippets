@@ -1,6 +1,6 @@
 {
   "Vue Single File Component Composition API": {
-    "prefix": "vbase",
+    "prefix": "vue3",
     "body": [
       "<template>",
       "\t<div>",
@@ -12,14 +12,14 @@
       "",
       "</script>",
       "",
-      "<style lang=\"scss\" scoped>",
+      "<style lang=\"${1|scss,stylus,less|}\" scoped>",
       "",
       "</style>"
     ],
-    "description": "Base for Vue File Composition API"
+    "description": "Base for Vue File Composition API with SCSS"
   },
   "Vue Single File Component Composition API with Typescript": {
-    "prefix": "vbase-ts",
+    "prefix": "v3-ts",
     "body": [
       "<template>",
       "\t<div>",
@@ -36,6 +36,34 @@
       "</style>"
     ],
     "description": "Base for Vue File Composition API - Typescript"
+  },
+  "Vue Single File Component with SCSS": {
+    "key": "vue-single-file-component-scss",
+    "prefix": "vue2",
+    "body": [
+      "<template>",
+      "\t<div>",
+      "",
+      "\t</div>",
+      "</template>",
+      "",
+      "<script>",
+      "export default {",
+      "\tdata () {",
+      "\t\treturn {",
+      "\t\t\t${0}",
+      "\t\t}",
+      "\t},",
+      "\tmethods: {",
+      "\t}",
+      "}",
+      "</script>",
+      "",
+      "<style lang=\"scss\" scoped>",
+      "",
+      "</style>"
+    ],
+    "description": "Base for Vue File with SCSS"
   },
   "Vue Single File Component with Css": {
     "key": "vue-single-file-component-css",
@@ -64,34 +92,6 @@
       "</style>"
     ],
     "description": "Base for Vue File with CSS"
-  },
-  "Vue Single File Component with SCSS": {
-    "key": "vue-single-file-component-scss",
-    "prefix": "v2-scss",
-    "body": [
-      "<template>",
-      "\t<div>",
-      "",
-      "\t</div>",
-      "</template>",
-      "",
-      "<script>",
-      "export default {",
-      "\tdata () {",
-      "\t\treturn {",
-      "\t\t\t${0}",
-      "\t\t}",
-      "\t},",
-      "\tmethods: {",
-      "\t}",
-      "}",
-      "</script>",
-      "",
-      "<style lang=\"scss\" scoped>",
-      "",
-      "</style>"
-    ],
-    "description": "Base for Vue File with SCSS"
   },
   "Vue Single File Component with LESS": {
     "key": "vue-single-file-component-less",

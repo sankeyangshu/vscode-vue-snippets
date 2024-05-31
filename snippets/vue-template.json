@@ -1,0 +1,65 @@
+{
+  "Vue v-for": {
+    "prefix": "vfor",
+    "body": ["v-for=\"(${2:item}, ${3:index}) in ${1:items}\" :key=\"${4:index}\""],
+    "description": "vfor statement"
+  },
+  "Vue Style Binding": {
+    "prefix": "vstyle",
+    "body": [" :style=\"{ fontSize: ${1:data} + 'px' }\""],
+    "description": "vue inline style binding"
+  },
+  "Vue Style Binding Object": {
+    "prefix": "vstyle-obj",
+    "body": [" :style=\"[${1:styleObjectA}, ${2:styleObjectB]}\""],
+    "description": "vue inline style binding, objects"
+  },
+  "Vue Class Binding": {
+    "prefix": "vclass",
+    "body": [" :class=\"{ ${1:className}: ${2:data} }\""],
+    "description": "vue class binding"
+  },
+  "Vue Class Binding Object": {
+    "prefix": "vclass-obj",
+    "body": [" :class=\"[${1:classNameA}, ${2:classNameB}]\""],
+    "description": "vue class binding"
+  },
+  "Vue Multiple Conditional Class Bindings": {
+    "prefix": "vclass-obj-mult",
+    "body": [" :class=\"[${1:classNameA}, {${2:classNameB} : ${3:condition}}]\""],
+    "description": "vue multiple conditional class bindings"
+  },
+  "Vue Named Routing Link": {
+    "prefix": "vroutename",
+    "body": ["<router-link :to=\"{name: '${1:name}'}\">${2:LinkTitle}</router-link>"],
+    "description": "Named routing link"
+  },
+  "Vue Named Routing Link with Params": {
+    "prefix": "vroutenameparam",
+    "body": [
+      "<router-link :to=\"{name: '${1:name}', params:{${2:id}: '${3:value}'} }\">${4:LinkTitle}</router-link>"
+    ],
+    "description": "Named routing link w/ params"
+  },
+  "Vue Path Routing Link": {
+    "prefix": "vroutepath",
+    "body": ["<router-link to=\"${1:path}\">${2:LinkTitle}</router-link>"],
+    "description": "Path routing link"
+  },
+  "Vue Transition Component with JavaScript Hooks": {
+    "prefix": "vanim",
+    "body": [
+      "<transition",
+      "\tmode=\"out-in\"",
+      "\t@before-enter=\"beforeEnter\"",
+      "\t@enter=\"enter\"",
+      "",
+      "\t@before-leave=\"beforeLeave\"",
+      "\t@leave=\"leave\"",
+      "\t:css=\"false\">",
+      "",
+      "</transition>"
+    ],
+    "description": "transition component js hooks"
+  }
+}
