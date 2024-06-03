@@ -2,7 +2,7 @@
   "name": "vscode-vue-collection-snippets",
   "displayName": "Vue Collection Vscode Snippets",
   "description": "A Vue 2/3 Code Snippets Extension",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "publisher": "sankeyangshu",
   "private": true,
   "author": "sankeyangshu",
@@ -53,6 +53,30 @@
       {
         "language": "typescript",
         "path": "./snippets/vue-script.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/vue-script-router.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/vue-script-router.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/vue-script-vuex.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/vue-script-vuex.json"
+      },
+      {
+        "language": "javascript",
+        "path": "./snippets/vue-script-pinia.json"
+      },
+      {
+        "language": "typescript",
+        "path": "./snippets/vue-script-pinia.json"
       }
     ]
   },

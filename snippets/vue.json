@@ -18,6 +18,25 @@
     ],
     "description": "Base for Vue File Composition API with SCSS"
   },
+  "Vue Single File Component Composition API with CSS": {
+    "prefix": "vbase-css",
+    "body": [
+      "<template>",
+      "\t<div>",
+      "",
+      "\t</div>",
+      "</template>",
+      "",
+      "<script setup>",
+      "",
+      "</script>",
+      "",
+      "<style scoped>",
+      "",
+      "</style>"
+    ],
+    "description": "Base for Vue File Composition API with CSS"
+  },
   "Vue Single File Component Composition API with Typescript": {
     "prefix": "vbase-ts",
     "body": [

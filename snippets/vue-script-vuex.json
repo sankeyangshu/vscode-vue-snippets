@@ -1,0 +1,74 @@
+{
+  "Vuex Store": {
+    "prefix": "vxstore",
+    "body": [
+      "import Vue from 'vue';",
+      "import Vuex from 'vuex';",
+      "",
+      "Vue.use(Vuex);",
+      "",
+      "export default new Vuex.Store({",
+      "\tmodules: {},",
+      "\tstate: {",
+      "\t\t${1:key}: ${2:value}",
+      "\t}",
+      "\tmutations: {}",
+      "\tactions: {}",
+      "});"
+    ],
+    "description": "Base for Vuex store"
+  },
+  "Vuex Getters": {
+    "prefix": "vxgetter",
+    "body": ["getters: {", "\t${1:value}: state => {", "\t\treturn state.${1:value};", "\t}", "}"],
+    "description": "vuex getter"
+  },
+  "Vuex Mutation": {
+    "prefix": "vxmutation",
+    "body": [
+      "mutations: {",
+      "\t${1:updateValue}(state, ${3:payload}) {",
+      "\t\tstate.${2:value} = ${3:payload};",
+      "\t}",
+      "}"
+    ],
+    "description": "vuex mutation"
+  },
+  "Vuex Action": {
+    "prefix": "vxaction",
+    "body": [
+      "actions: {",
+      "\t${1:updateValue}({commit}, ${2:payload}) {",
+      "\t\tcommit('${1:updateValue}', ${2:payload});",
+      "\t}",
+      "}"
+    ],
+    "description": "vuex action"
+  },
+  "Vuex Module": {
+    "prefix": "vxmodule",
+    "body": [
+      "export default {",
+      "\tstate: {",
+      "\t\tvalue: 'my value'",
+      "\t},",
+      "\tgetters: {",
+      "\t\tvalue: state => {",
+      "\t\t\treturn state.value;",
+      "\t\t}",
+      "\t},",
+      "\tmutations: {",
+      "\t\tupdateValue(state, payload) {",
+      "\t\t\tstate.value = payload;",
+      "\t\t}",
+      "\t},",
+      "\tactions: {",
+      "\t\tupdateValue({commit}, payload) {",
+      "\t\t\tcommit('updateValue', payload);",
+      "\t\t}",
+      "\t}",
+      "};"
+    ],
+    "description": "vuex module"
+  }
+}

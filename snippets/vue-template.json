@@ -29,6 +29,11 @@
     "body": [" :class=\"[${1:classNameA}, {${2:classNameB} : ${3:condition}}]\""],
     "description": "vue multiple conditional class bindings"
   },
+  "Vue v-on Shortcut Directive": {
+    "prefix": "von",
+    "body": ["@click=\"${1:handler}(${2:arg}, $event)\""],
+    "description": "v-on click handler with arguments"
+  },
   "Vue Named Routing Link": {
     "prefix": "vroutename",
     "body": ["<router-link :to=\"{name: '${1:name}'}\">${2:LinkTitle}</router-link>"],

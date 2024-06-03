@@ -4,6 +4,18 @@
     "body": ["data() {", "\treturn {", "\t\t${1:key}: ${2:value}", "\t}", "},"],
     "description": "Vue Component Data"
   },
+  "Vue Props with Default": {
+    "prefix": "vprops",
+    "body": [
+      "props: {",
+      "\t${1:propName}: {",
+      "\t\ttype: ${2:Number},",
+      "\t\tdefault: ${0}",
+      "\t},",
+      "},"
+    ],
+    "description": "Vue Props with Default"
+  },
   "Vue Methods": {
     "prefix": "vmethod",
     "body": ["methods: {", "\t${1:name}() {", "\t\t${0}", "\t}", "},"],
@@ -34,27 +46,20 @@
     ],
     "description": "vue watcher with options"
   },
-  "Vue Props with Default": {
-    "prefix": "vprops",
-    "body": [
-      "props: {",
-      "\t${1:propName}: {",
-      "\t\ttype: ${2:Number},",
-      "\t\tdefault: ${0}",
-      "\t},",
-      "},"
-    ],
-    "description": "Vue Props with Default"
+  "Vue Filter": {
+    "prefix": "vfilter",
+    "body": ["filters: {", "\t${1:fnName}(${2:value}) {", "\t\treturn ${2:value}${0};", "\t}", "}"],
+    "description": "vue filter"
   },
   "Vue Import into the Component": {
     "prefix": "vcomponents",
     "body": ["components: {", "\t${1:New},", "},"],
     "description": "Import one component into another, within export statement"
   },
-  "Vue Filter": {
-    "prefix": "vfilter",
-    "body": ["filters: {", "\t${1:fnName}(${2:value}) {", "\t\treturn ${2:value}${0};", "\t}", "}"],
-    "description": "vue filter"
+  "Vue Emit": {
+    "prefix": "vemit",
+    "body": ["${1:this}.\\$emit('${2:eventName}', ${3:data})"],
+    "description": "vue emit"
   },
   "Vue NextTick": {
     "prefix": "vnexttick",
@@ -63,40 +68,13 @@
   },
   "Vue Set": {
     "prefix": "vset",
-    "body": ["${1:this}.set(${2:target}, ${3:key}, ${4:value})"],
+    "body": ["${1:this}.\\$set(${2:target}, ${3:key}, ${4:value})"],
     "description": "vue set"
   },
   "Vue Delete": {
     "prefix": "vdelete",
-    "body": ["${1:this}.delete(${2:target}, ${3:key})"],
+    "body": ["${1:this}.\\$delete(${2:target}, ${3:key})"],
     "description": "vue delete"
-  },
-  "Vue Mixin": {
-    "prefix": "vmixin",
-    "body": [
-      "const ${1:mixinName} = {",
-      "\tmounted() {",
-      "\t\tconsole.log('hello from mixin!');",
-      "\t},",
-      "};"
-    ],
-    "description": "vue mixin"
-  },
-  "Vue Use Mixin": {
-    "prefix": "vmixin-use",
-    "body": ["mixins: [${1:mixinName}],"],
-    "description": "vue use mixin"
-  },
-  "Vue Custom Directive": {
-    "prefix": "vc-direct",
-    "body": [
-      "${1:this}.directive('${2:directiveName}', {",
-      "\tbind(el, binding, vnode) {",
-      "\t\tel.style.${3:arg} = binding.value.${3:arg};",
-      "\t}",
-      "});"
-    ],
-    "description": "vue custom directive"
   },
   "Vue Lifecycle beforeCreate": {
     "prefix": "vbeforecreate",
@@ -138,43 +116,15 @@
     "body": ["destroyed () {", "\t${0};", "},"],
     "description": "destroyed lifecycle method"
   },
-  "Vue Transition Methods with JavaScript Hooks": {
-    "prefix": "vanimhook-js",
-    "body": [
-      "beforeEnter(el) {",
-      "\tconsole.log('beforeEnter');",
-      "},",
-      "enter(el, done) {",
-      "\tconsole.log('enter');",
-      "\tdone();",
-      "},",
-      "beforeLeave(el) {",
-      "\tconsole.log('beforeLeave');",
-      "},",
-      "leave(el, done) {",
-      "\tconsole.log('leave');",
-      "\tdone();",
-      "},"
-    ],
-    "description": "transition component js hooks"
+  "Vue Lifecycle beforeUnmount": {
+    "prefix": "vbeforeunmount",
+    "body": ["beforeUnmount () {", "\t${0};", "},"],
+    "description": "beforeUnmount lifecycle method"
   },
-  "Vue Commit Vuex Store in Methods": {
-    "prefix": "vcommit",
-    "body": [
-      "${1:mutationName}() {",
-      "\tthis.\\$store.commit('${1:mutationName}', ${2:payload});",
-      "}"
-    ],
-    "description": "commit to vuex store in methods for mutation"
-  },
-  "Vue Dispatch Vuex Store in Methods": {
-    "prefix": "vdispatch",
-    "body": [
-      "${1:actionName}() {",
-      "\tthis.\\$store.dispatch('${1:actionName}', ${2:payload});",
-      "}"
-    ],
-    "description": "dispatch to vuex store in methods for action"
+  "Vue Lifecycle Unomunt": {
+    "prefix": "vunmount",
+    "body": ["unmounted () {", "\t${0};", "},"],
+    "description": "unmounted lifecycle method"
   },
   "Vue Composition API - Vue ref": {
     "prefix": "v3ref",
@@ -188,7 +138,7 @@
   },
   "Vue Composition API - Computed": {
     "prefix": "v3computed",
-    "body": ["const ${1:name} = computed(() => {", "\treturn ${2}", "})"],
+    "body": ["const ${1:name} = computed(() => {", "\treturn ${2:}", "})"],
     "description": "Vue Composition api - computed"
   },
   "Vue Composition API - watch - single source": {
@@ -210,16 +160,15 @@
     "body": ["watchEffect(() => {", "\t${1}", "})"],
     "description": "Vue Composition api - watchEffect"
   },
-
-  "Vue Lifecycle Hooks - onMounted": {
-    "prefix": "v3onmounted",
-    "body": ["onMounted(() => {${1}})"],
-    "description": "Vue Mounted Lifecycle hook"
-  },
   "Vue Lifecycle Hooks - onBeforeMount": {
     "prefix": "v3onbeforemount",
     "body": ["onBeforeMount(() => {${1}})"],
     "description": "Vue onBeforeMount Lifecycle hook"
+  },
+  "Vue Lifecycle Hooks - onMounted": {
+    "prefix": "v3onmounted",
+    "body": ["onMounted(() => {${1}})"],
+    "description": "Vue Mounted Lifecycle hook"
   },
   "Vue Lifecycle Hooks - onBeforeUpdate": {
     "prefix": "v3onbeforeupdate",
@@ -231,11 +180,6 @@
     "body": ["onUpdated(() => {${1}})"],
     "description": "Vue onUpdated Lifecycle hook"
   },
-  "Vue Lifecycle Hooks - onErrorCaptured": {
-    "prefix": "v3onerrorcaptured",
-    "body": ["onErrorCaptured(() => {${1}})"],
-    "description": "Vue onErrorCaptured Lifecycle hook"
-  },
   "Vue Lifecycle Hooks - onUnmounted": {
     "prefix": "v3onunmounted",
     "body": ["onUnmounted(() => {${1}})"],
@@ -245,5 +189,10 @@
     "prefix": "v3onbeforeunmount",
     "body": ["onBeforeUnmount(() => {${1}})"],
     "description": "(beforeDestroy) Vue onBeforeUnmount Lifecycle hook"
+  },
+  "Vue Lifecycle Hooks - onErrorCaptured": {
+    "prefix": "v3onerrorcaptured",
+    "body": ["onErrorCaptured(() => {${1}})"],
+    "description": "Vue onErrorCaptured Lifecycle hook"
   }
 }

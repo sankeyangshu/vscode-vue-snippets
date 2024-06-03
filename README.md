@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://github.com/sankeyangshu/vscode-vue-snippets/blob/main/res/logo.png" width="80"/>
+  <img src="https://github.com/sankeyangshu/vscode-vue-snippets/blob/main/res/logo.png?raw=true" width="80"/>
 </h1>
 
 <p align="center">
@@ -30,56 +30,57 @@ Below is a list of all available snippets and the triggers of each one. The **â‡
 
 ### Vue
 
-| Snippet   | Purpose                                               |
-| --------- | ----------------------------------------------------- |
-| `vue2`    | Single file component base with SCSS                  |
-| `vue3`    | Single File component Composition API with SCSS       |
-| `v3-ts`   | Single File component setup Composition API with SCSS |
-| `v2-css`  | Single file component base with CSS                   |
-| `v2-styl` | Single file component base with Stylus                |
-| `v2-less` | Single file component base with Less                  |
+| Snippet     | Purpose                                        |
+| ----------- | ---------------------------------------------- |
+| `vbase`     | Base for Vue File Composition API with SCSS    |
+| `vbase-css` | Base for Vue File Composition API with CSS     |
+| `vbase-ts`  | Base for Vue File Composition API - Typescript |
+| `vinit`     | Base for Vue File                              |
+| `vinit-css` | Base for Vue File with CSS                     |
 
 ### Template
 
-| Snippet           | Purpose                             |
-| ----------------- | ----------------------------------- |
-| `vfor`            | v-for directive                     |
-| `vstyle`          | Inline style binding                |
-| `vstyle-obj`      | Inline style binding with objects   |
-| `vclass`          | Class binding                       |
-| `vclass-obj`      | Class binding with objects          |
-| `vclass-obj-mult` | Multiple conditional class bindings |
-| `vroutename`      | router-link Named Routing           |
-| `vroutenameparam` | router-link Named with Parameters   |
-| `vroutepath`      | router-link Path Routing Link       |
-| `vanim`           | Transition component with JS hooks  |
+| Snippet           | Purpose                                 |
+| ----------------- | --------------------------------------- |
+| `vfor`            | vfor statement                          |
+| `vstyle`          | vue inline style binding                |
+| `vstyle-obj`      | vue inline style binding, objects       |
+| `vclass`          | vue class binding                       |
+| `vclass-obj`      | vue class binding                       |
+| `vclass-obj-mult` | vue multiple conditional class bindings |
+| `von`             | v-on click handler with arguments       |
+| `vroutename`      | Named routing link                      |
+| `vroutenameparam` | Named routing link w/ params            |
+| `vroutepath`      | Path routing link                       |
+| `vanim`           | transition component js hooks           |
+| `vcomponent`      | component element                       |
 
 ### Script
 
-| Snippet          | Purpose                                                       |
-| ---------------- | ------------------------------------------------------------- |
-| `vdata`          | Component data as a function                                  |
-| `vmethod`        | Vue method                                                    |
-| `vcomputed`      | Vue computed property                                         |
-| `vwatcher`       | Vue watcher with new and old value args                       |
-| `vprops`         | Props with type and default                                   |
-| `vcomponents`    | Import one component into another within the export statement |
-| `vfilter`        | Vue filter                                                    |
-| `vnexttick`      | Vue nexttick                                                  |
-| `vmixin`         | Create a Vue Mixin                                            |
-| `vmixin-use`     | Bring a mixin into a component to use                         |
-| `vbeforecreate`  | beforeCreate lifecycle method                                 |
-| `vcreated`       | created lifecycle method                                      |
-| `vbeforemount`   | beforeMount lifecycle method                                  |
-| `vmounted`       | vmounted lifecycle method                                     |
-| `vbeforeupdate`  | beforeUpdate lifecycle method                                 |
-| `vupdated`       | updated lifecycle method                                      |
-| `vbeforedestroy` | beforeDestroy lifecycle method                                |
-| `vdestroyed`     | destroyed lifecycle method                                    |
-| `vc-direct`      | Vue create a custom directive                                 |
-| `vanimhook-js`   | Using the Transition component JS hooks in methods            |
-| `vcommit`        | Commit to Vuex store in methods for mutation                  |
-| `vdispatch`      | Dispatch to Vuex store in methods for action                  |
+| Snippet            | Purpose                                                    |
+| ------------------ | ---------------------------------------------------------- |
+| `vdata`            | Vue Component Data                                         |
+| `vprops`           | Vue Props with Default                                     |
+| `vmethod`          | vue method                                                 |
+| `vcomputed`        | computed value                                             |
+| `vwatcher`         | vue watcher                                                |
+| `vwatcher-options` | vue watcher with options                                   |
+| `vfilter`          | vue filter                                                 |
+| `vcomponents`      | Import one component into another, within export statement |
+| `vemit`            | vue emit                                                   |
+| `vnexttick`        | vue nextTick                                               |
+| `vset`             | vue set                                                    |
+| `vdelete`          | vue delete                                                 |
+| `vbeforecreate`    | beforeCreate lifecycle method                              |
+| `vcreated`         | created lifecycle method                                   |
+| `vbeforemount`     | beforeMount lifecycle method                               |
+| `vmounted`         | mounted lifecycle method                                   |
+| `vbeforeupdate`    | beforeUpdate lifecycle method                              |
+| `vupdated`         | updated lifecycle method                                   |
+| `vbeforedestroy`   | beforeDestroy lifecycle method                             |
+| `vdestroyed`       | destroyed lifecycle method                                 |
+| `vbeforeunmount`   | beforeUnmount lifecycle method                             |
+| `vunmount`         | unmounted lifecycle method                                 |
 
 ### Vue Composition API
 
@@ -98,6 +99,41 @@ Below is a list of all available snippets and the triggers of each one. The **â‡
 | `v3onerrorcaptured` | Lifecycle hook - onErrorCaptured                 |
 | `v3onunmounted`     | Lifecycle hook - (destroyed) onUnmounted         |
 | `v3onbeforeunmount` | Lifecycle hook - (beforeDestroy) onBeforeUnmount |
+
+### Vue Router
+
+| Snippet              | Purpose                                        |
+| -------------------- | ---------------------------------------------- |
+| `vrouter`            | Base for Vue Router                            |
+| `vscrollbehavior`    | Vue Router scrollBehavior                      |
+| `vbeforeeach`        | Vue Router global guards beforeEach            |
+| `vbeforeresolve`     | Vue Router global guards beforeResolve         |
+| `vaftereach`         | Vue Router global guards afterEach             |
+| `vbeforeenter`       | Vue Router per-route guard beforeEnter         |
+| `vbeforerouteenter`  | Vue Router component guards beforeRouteEnter   |
+| `vbeforerouteupdate` | Vue Router component guards beforeRouteUpdate  |
+| `vbeforerouteleave`  | Vue Router component guards beforeRouteLeave   |
+| `vroute-named`       | Vue Router route with per route code-splitting |
+| `v3router`           | Vue Router hooks                               |
+| `v3route`            | Vue Route hooks                                |
+
+### Vue Vuex
+
+| Snippet      | Purpose             |
+| ------------ | ------------------- |
+| `vxstore`    | Base for Vuex store |
+| `vxgetter`   | vuex getter         |
+| `vxmutation` | vuex mutation       |
+| `vxaction`   | vuex action         |
+| `vxmodule`   | vuex module         |
+
+### Vue Pinia
+
+| Snippet   | Purpose              |
+| --------- | -------------------- |
+| `vpinia`  | Base for Pinia store |
+| `vgetter` | Vue Pinia getters    |
+| `vaction` | Vue Pinia actions    |
 
 ## License
 
