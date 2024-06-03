@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="./res/logo.png" width="80"/>
+  <img src="https://github.com/sankeyangshu/vscode-vue-snippets/blob/main/res/logo.png" width="80"/>
 </h1>
 
 <p align="center">

@@ -61,5 +61,10 @@
       "</transition>"
     ],
     "description": "transition component js hooks"
+  },
+  "Vue Component": {
+    "prefix": "vcomponent",
+    "body": ["<component :is=\"${1:componentId}\"></component>$0"],
+    "description": "component element"
   }
 }

@@ -1,6 +1,6 @@
 {
   "Vue Single File Component Composition API": {
-    "prefix": "vue3",
+    "prefix": "vbase",
     "body": [
       "<template>",
       "\t<div>",
@@ -19,7 +19,7 @@
     "description": "Base for Vue File Composition API with SCSS"
   },
   "Vue Single File Component Composition API with Typescript": {
-    "prefix": "v3-ts",
+    "prefix": "vbase-ts",
     "body": [
       "<template>",
       "\t<div>",
@@ -31,15 +31,15 @@
       "",
       "</script>",
       "",
-      "<style lang=\"scss\" scoped>",
+      "<style lang=\"${1|scss,stylus,less|}\" scoped>",
       "",
       "</style>"
     ],
     "description": "Base for Vue File Composition API - Typescript"
   },
-  "Vue Single File Component with SCSS": {
+  "Vue Single File Component": {
     "key": "vue-single-file-component-scss",
-    "prefix": "vue2",
+    "prefix": "vinit",
     "body": [
       "<template>",
       "\t<div>",
@@ -59,15 +59,15 @@
       "}",
       "</script>",
       "",
-      "<style lang=\"scss\" scoped>",
+      "<style lang=\"${1|scss,stylus,less|}\" scoped>",
       "",
       "</style>"
     ],
-    "description": "Base for Vue File with SCSS"
+    "description": "Base for Vue File"
   },
   "Vue Single File Component with Css": {
     "key": "vue-single-file-component-css",
-    "prefix": "v2-css",
+    "prefix": "vinit-css",
     "body": [
       "<template>",
       "\t<div>",
@@ -92,61 +92,5 @@
       "</style>"
     ],
     "description": "Base for Vue File with CSS"
-  },
-  "Vue Single File Component with LESS": {
-    "key": "vue-single-file-component-less",
-    "prefix": "v2-less",
-    "body": [
-      "<template>",
-      "\t<div>",
-      "",
-      "\t</div>",
-      "</template>",
-      "",
-      "<script>",
-      "export default {",
-      "\tdata () {",
-      "\t\treturn {",
-      "\t\t\t${0}",
-      "\t\t}",
-      "\t},",
-      "\tmethods: {",
-      "\t}",
-      "}",
-      "</script>",
-      "",
-      "<style lang=\"less\" scoped>",
-      "",
-      "</style>"
-    ],
-    "description": "Base for Vue File with LESS"
-  },
-  "Vue Single File Component with Stylus": {
-    "key": "vue-single-file-component-stylus",
-    "prefix": "v2-styl",
-    "body": [
-      "<template>",
-      "\t<div>",
-      "",
-      "\t</div>",
-      "</template>",
-      "",
-      "<script>",
-      "export default {",
-      "\tdata () {",
-      "\t\treturn {",
-      "\t\t\t${0}",
-      "\t\t}",
-      "\t},",
-      "\tmethods: {",
-      "\t}",
-      "}",
-      "</script>",
-      "",
-      "<style lang=\"stylus\" scoped>",
-      "",
-      "</style>"
-    ],
-    "description": "Base for Vue File with Stylus"
   }
 }
