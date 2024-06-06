@@ -12,23 +12,30 @@ export interface SnippetType<T> {
  * 占位符
  */
 export const Placeholders = {
-  ModuleName: 'moduleName',
-  Module: 'module',
-  Alias: 'alias',
-  FunctionName: 'functionName',
-  ClassName: 'className',
-  BaseClassName: 'baseClassName',
-  TypeName: 'typeName',
-  Array: 'array',
-  Object: 'object',
-  Item: 'item',
-  Time: 'time',
-  Result: 'result',
-  Error: 'error',
-  Expression: 'expression',
-  Params: 'params',
-  Data: 'data',
-  Value: 'value',
-  Label: 'label',
-  Message: 'message',
+  FirstTab: 'first',
+  SecondTab: 'second',
+  ThirdTab: 'third',
+  FourthTab: 'fourth',
+  FifthTab: 'fifth',
+  SixthTab: 'sixth',
+  FileName: 'file',
+  FirstCapitalize: 'first',
+  SecondCapitalize: 'second',
+  ThirdCapitalize: 'third',
+};
+
+/**
+ * 生成代码片段可识别的占位符
+ */
+export const SnippetPlaceholders = {
+  FirstTab: '${1:first}',
+  SecondTab: '${2:second}',
+  ThirdTab: '${3:third}',
+  FourthTab: '${4:fourth}',
+  FifthTab: '${5:fifth}',
+  SixthTab: '${6:sixth}',
+  FileName: '${1:${TM_FILENAME_BASE}}',
+  FirstCapitalize: '${1/(.*)/${1:/capitalize}/}',
+  SecondCapitalize: '${2/(.*)/${2:/capitalize}/}',
+  ThirdCapitalize: '${3/(.*)/${3:/capitalize}/}',
 };
