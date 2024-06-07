@@ -2,7 +2,7 @@
   "name": "vscode-vue-collection-snippets",
   "displayName": "Vue Collection Vscode Snippets",
   "description": "A Vue 2/3 Code Snippets Extension",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publisher": "sankeyangshu",
   "private": true,
   "author": "sankeyangshu",
