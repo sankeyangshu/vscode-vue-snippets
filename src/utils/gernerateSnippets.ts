@@ -11,7 +11,7 @@ import {
   uniappTemplateSnippets,
   uniappCollectionSnippets,
 } from '../sourceSnippets/uniapp';
-import { formatSnippetPlaceholders } from './formatters';
+import { formatSnippetPlaceholders, formatUseVueTemplateSnippets } from './formatters';
 import { mkdir, access, writeFile, constants } from 'fs/promises';
 
 /**
@@ -74,7 +74,10 @@ export const generateSnippets = async () => {
     const scopeList = [
       {
         scope: 'vue',
-        list: [...VueSnippets, ...(uniappCodeSnippets ? uniappTemplateSnippets : [])],
+        list: [
+          ...formatUseVueTemplateSnippets(VueSnippets),
+          ...(uniappCodeSnippets ? uniappTemplateSnippets : []),
+        ],
       },
       {
         scope: 'html',

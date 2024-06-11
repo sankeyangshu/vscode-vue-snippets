@@ -2,7 +2,7 @@
   "name": "vscode-vue-collection-snippets",
   "displayName": "Vue Collection Vscode Snippets",
   "description": "A Vue 2/3 Code Snippets Extension",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "publisher": "sankeyangshu",
   "private": true,
   "author": "sankeyangshu",
@@ -54,6 +54,21 @@
           "type": "string",
           "markdownDescription": "defines the language scopes for which the snippets will be available.\nUse comma separated values.\nFor example: `typescript,javascript`",
           "default": "typescript,javascript"
+        },
+        "vueSnippets.settings.useTemplateSnippets": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "description": "defines the template snippets for which the snippets will be available.",
+          "default": [
+            "vinit",
+            "vinit-scss",
+            "vbase",
+            "vbase-scss",
+            "vts",
+            "vts-scss"
+          ]
         }
       }
     },

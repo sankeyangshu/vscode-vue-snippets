@@ -29,6 +29,11 @@ export interface ExtensionSettings {
    */
   vuexCodeSnippets: boolean;
 
+  /**
+   * 定义使用的 vue 模板片段。
+   */
+  useTemplateSnippets: string[];
+
   // TODO： vue2 options模式代码支持待开发
   // vueOptionsHelper: boolean;
 }

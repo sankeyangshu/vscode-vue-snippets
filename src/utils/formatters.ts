@@ -1,3 +1,5 @@
+import { extensionConfig } from '../config';
+import { VueSnippetType } from '../sourceSnippets/vue';
 import { Placeholders, SnippetPlaceholders } from '../types';
 
 /**
@@ -17,4 +19,16 @@ export const formatSnippetPlaceholders = (snippet: string) => {
     .replace(new RegExp(Placeholders.FirstCapitalize, 'g'), SnippetPlaceholders.FirstCapitalize)
     .replace(new RegExp(Placeholders.SecondCapitalize, 'g'), SnippetPlaceholders.SecondCapitalize)
     .replace(new RegExp(Placeholders.ThirdCapitalize, 'g'), SnippetPlaceholders.ThirdCapitalize);
+};
+
+/**
+ * 筛选出需要使用的模板
+ * @param {VueSnippetType[]} list - vue Template 代码片段
+ * @return  需要使用的模板
+ */
+export const formatUseVueTemplateSnippets = (list: VueSnippetType[]) => {
+  const { useTemplateSnippets } = extensionConfig();
+
+  // 筛选出需要使用的模板，并返回
+  return list.filter((item) => useTemplateSnippets.includes(item.prefix));
 };

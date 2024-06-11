@@ -28,11 +28,12 @@ There you have either the option to show the already installed snippets or insta
 
 From extension provides options to customize the behavior of the snippets:
 
-|             Option | Description                                     |
-| -----------------: | ----------------------------------------------- |
-|     languageScopes | list of supported languages / files recognition |
-| uniappCodeSnippets | whether to support uniapp code snippet          |
-|   vuexCodeSnippets | whether to support vuex code snippet            |
+|              Option | Description                                                            |
+| ------------------: | ---------------------------------------------------------------------- |
+|      languageScopes | list of supported languages / files recognition                        |
+|  uniappCodeSnippets | whether to support uniapp code snippet                                 |
+|    vuexCodeSnippets | whether to support vuex code snippet                                   |
+| useTemplateSnippets | defines the template snippets for which the snippets will be available |
 
 ## [Snippets](./docs/Snippets.md)
 
