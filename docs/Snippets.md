@@ -9,13 +9,26 @@ Every space inside `{ }` and `( )` means that this is pushed into next line :)
 
 ### Vue
 
-| Snippet     | Purpose                                        |
-| ----------- | ---------------------------------------------- |
-| `vbase`     | Base for Vue File Composition API with SCSS    |
-| `vbase-css` | Base for Vue File Composition API with CSS     |
-| `vbase-ts`  | Base for Vue File Composition API - Typescript |
-| `vinit`     | Base for Vue File                              |
-| `vinit-css` | Base for Vue File with CSS                     |
+| Snippet         | Purpose                                                        |
+| --------------- | -------------------------------------------------------------- |
+| `vinit`         | Base for Vue Single File Component                             |
+| `vinit-scss`    | Base for Vue Single File Component with SCSS                   |
+| `vinit-less`    | Base for Vue Single File Component with Less                   |
+| `vinit-sass`    | Base for Vue Single File Component with Sass                   |
+| `vinit-stylus`  | Base for Vue Single File Component with Stylus                 |
+| `vinit-postcss` | Base for Vue Single File Component with PostCss                |
+| `vbase`         | Base for Vue File Composition API                              |
+| `vbase-scss`    | Base for Vue File Composition API with SCSS                    |
+| `vbase-less`    | Base for Vue File Composition API with Less                    |
+| `vbase-sass`    | Base for Vue File Composition API with Sass                    |
+| `vbase-stylus`  | Base for Vue File Composition API with Stylus                  |
+| `vbase-postcss` | Base for Vue File Composition API with PostCss                 |
+| `vts`           | Base for Vue Single File Component with Typescript             |
+| `vts-scss`      | Base for Vue Single File Component with Typescript and SCSS    |
+| `vts-less`      | Base for Vue Single File Component with Typescript and Less    |
+| `vts-sass`      | Base for Vue Single File Component with Typescript and Sass    |
+| `vts-stylus`    | Base for Vue Single File Component with Typescript and Stylus  |
+| `vts-postcss`   | Base for Vue Single File Component with Typescript and PostCss |
 
 ### Template
 
@@ -98,6 +111,8 @@ Every space inside `{ }` and `( )` means that this is pushed into next line :)
 
 ### Vue Vuex
 
+This snippets is enabled or not by **vuexCodeSnippets**.
+
 | Snippet      | Purpose             |
 | ------------ | ------------------- |
 | `vxstore`    | Base for Vuex store |
@@ -113,3 +128,27 @@ Every space inside `{ }` and `( )` means that this is pushed into next line :)
 | `vpinia`  | Base for Pinia store |
 | `vgetter` | Vue Pinia getters    |
 | `vaction` | Vue Pinia actions    |
+
+### UniApp Template & Snippets
+
+This snippets is enabled or not by **uniappCodeSnippets**.
+
+| Snippet               | Purpose                                              |
+| --------------------- | ---------------------------------------------------- |
+| `uni2`                | Uni-app Options Template                             |
+| `uni3`                | Uni-app Composition Template                         |
+| `uni-ts`              | Uni-app TS Template                                  |
+| `u2onLoad`            | onLoad 监听页面加载                                  |
+| `u2onShow`            | onShow 监听页面显示                                  |
+| `u2onReady`           | onReady 监听页面初次渲染完成                         |
+| `u2onHide`            | onHide 监听页面隐藏                                  |
+| `u2onUnload`          | onUnload 监听页面卸载                                |
+| `u2onPullDownRefresh` | onPullDownRefresh 监听用户下拉动作，一般用于下拉刷新 |
+| `u2onReachBottom`     | onReachBottom 页面滚动到底部的事件                   |
+| `u2onShareAppMessage` | onShareAppMessage 监听用户点击右上角转发             |
+| `u2onPageScroll`      | onPageScroll 监听页面滚动                            |
+| `u3onLoad`            | onLoad 监听页面加载 (Composition API)                |
+| `u3onShow`            | onShow 监听页面显示 (Composition API)                |
+| `u3onReady`           | onReady 监听页面初次渲染完成 (Composition API)       |
+| `u3onHide`            | onHide 监听页面隐藏 (Composition API)                |
+| `u3onUnload`          | onUnload 监听页面卸载 (Composition API)              |
