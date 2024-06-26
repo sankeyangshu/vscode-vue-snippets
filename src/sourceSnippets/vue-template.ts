@@ -93,7 +93,7 @@ const vueClassBindingObjectMultiple: VueTemplateSnippetType = {
 const vueVOnShortcut: VueTemplateSnippetType = {
   key: 'vueVOnShortcut',
   prefix: 'von',
-  body: [`@click="${Placeholders.FirstTab}(${Placeholders.SecondTab}, $event)"`],
+  body: [` @click="${Placeholders.FirstTab}(${Placeholders.SecondTab})"`],
   description: 'v-on click handler with arguments',
 };
 
