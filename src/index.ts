@@ -1,6 +1,6 @@
 import { commands, ConfigurationChangeEvent, window, workspace } from 'vscode';
+import { generateSnippets } from './utils/generateSnippets';
 import { EXTENSION_NAME } from './config';
-import { generateSnippets } from './utils/gernerateSnippets';
 
 /**
  * 当配置发生变化时，提示用户重启扩展

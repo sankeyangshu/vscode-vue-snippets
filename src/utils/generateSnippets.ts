@@ -1,18 +1,18 @@
+import { access, constants, mkdir, writeFile } from 'fs/promises';
 import path from 'path';
 import { extensionConfig } from '../config';
-import VueSnippets, { VueSnippetType } from '../sourceSnippets/vue';
-import VueTemplateSnippets, { VueTemplateSnippetType } from '../sourceSnippets/vue-template';
-import VueScriptSnippets, { vueScriptSnippetType } from '../sourceSnippets/vue-script';
-import VueRouterSnippets, { VueRouterSnippetType } from '../sourceSnippets/vue-router';
-import VuexSnippets, { VuexSnippetType } from '../sourceSnippets/vue-vuex';
-import VuePiniaSnippets, { VuePiniaSnippetType } from '../sourceSnippets/vue-pinia';
 import {
+  uniappCollectionSnippets,
   UniappSnippetType,
   uniappTemplateSnippets,
-  uniappCollectionSnippets,
 } from '../sourceSnippets/uniapp';
+import VueSnippets, { VueSnippetType } from '../sourceSnippets/vue';
+import VuePiniaSnippets, { VuePiniaSnippetType } from '../sourceSnippets/vue-pinia';
+import VueRouterSnippets, { VueRouterSnippetType } from '../sourceSnippets/vue-router';
+import VueScriptSnippets, { vueScriptSnippetType } from '../sourceSnippets/vue-script';
+import VueTemplateSnippets, { VueTemplateSnippetType } from '../sourceSnippets/vue-template';
+import VuexSnippets, { VuexSnippetType } from '../sourceSnippets/vue-vuex';
 import { formatSnippetPlaceholders, formatUseVueTemplateSnippets } from './formatters';
-import { mkdir, access, writeFile, constants } from 'fs/promises';
 
 /**
  * 代码片段 key 类型
